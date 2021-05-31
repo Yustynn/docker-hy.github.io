@@ -1,7 +1,7 @@
 version: '3'
 services:
   coursematerial:
-    image: devopsdockeruh/coursepage
+    image: yustynn/coursepage
     ports:
       - 4000:80
     container_name: coursematerial
@@ -10,5 +10,5 @@ services:
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: watchtower coursepage --interval 10
+    command: watchtower coursepage --interval 9
 
